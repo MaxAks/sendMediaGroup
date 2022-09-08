@@ -1,0 +1,13 @@
+media_arr = [
+                 {
+                      type: 'photo', #there you cac write your type of your media, like 'video', 'photo', 'audio'
+                      media: "BlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLa" # It is uniqie file_id information
+                 }, 
+                 {
+                      type: 'photo',
+                      media: 
+                      "BlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLaBlAblAbLa" # It is uniqie file_id information
+                  }
+              ]
+
+bot.api.sendMediaGroup(chat_id: message.from.id, type: 'photo', media: media_arr) # there you send all your media in one message
